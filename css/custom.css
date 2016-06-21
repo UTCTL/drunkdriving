@@ -22,10 +22,12 @@
 
 .col-md-3{
 
+	padding-top: 5px;
 	background: #FF9C00;
-	height: 220px;
+	height: 230px;
 	
 }
+
 
 .col-md-3 a{
 
@@ -97,7 +99,7 @@
 }
 
 .siteTitle h2{
-	
+
 	font-size: 1.8vw;
 
 	float:left;
