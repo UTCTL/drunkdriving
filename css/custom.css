@@ -29,18 +29,40 @@
 
 .col-md-3 a{
 
+	margin-top: -5px;
+	padding-top: 10px;
 	width: 90%!important;
 	position: absolute;
-
+	height: 40px;
 
 }
 
 .col-md-3 p{
-	padding:5px;
+	padding:10px;
 	height: 120px;
 	font-size: 16px;
 	background: #B26D00;
 
+
+}
+
+.col-md-6{
+
+	background: #FF9C00;
+	height: 520px;
+}
+
+.col-md-6 p{
+	padding:10px;
+	height: 450px;
+	font-size: 20px;
+	background: #B26D00;
+
+
+}
+
+.col-md-6 img{
+	margin-top:15px;
 
 }
 
@@ -56,6 +78,13 @@
 	background: #DEDBD3 url("../images/backgroundTexture_light.jpg") repeat center center;
 }
 
+.sectionContainer3{
+
+	width: 100%;
+	background: #3C3E3C url("../images/backgroundTexture_dark.png") repeat;
+
+}
+
 .col-md-3 h4{
 
 	padding-top: 4px;
@@ -65,6 +94,19 @@
 .row{
 	margin-left: 0!important;
 	margin-right: 0!important;
+}
+
+.siteTitle h2{
+
+	padding-top: .3%;
+	font-size: 2vw;
+	float:left;
+
+}
+
+.siteTitle img{
+	
+	float:right;
 }
 
 
