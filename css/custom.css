@@ -22,23 +22,30 @@
 .col-md-3{
 
 	background: #FF9C00;
-	height: 250px;
+	height: 220px;
 	
 }
 
 .col-md-3 a{
 
-	width: 100%!important;
+	width: 90%!important;
 	position: absolute;
 
 
 }
 
 .col-md-3 p{
+	padding:5px;
+	height: 120px;
+	font-size: 16px;
+	background: #B26D00;
 
-	max-height: 100px;
-	font-size: 18px;
 
+}
+
+.col-md-3 h4{
+
+	padding-top: 4px;
 
 }
 
