@@ -30,10 +30,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -44,13 +44,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Information</a>
-          <a class="navbar-brand" href="#conditions">Conditions</a>
-          <a class="navbar-brand" href="#questions">Questions</a>
-          <a class="navbar-brand" href="#social&skills">Social Support & Skills Enhancement</a>
         </div>
-        <!--<div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" role="tablist">
+            <li><a href="#information">Information</a></li>
+            <li><a href="#conditions">Conditions</a></li>
+            <li><a href="#questions">Questions</a></li>
+            <li><a href="#socialAndSkills">Social Support & Skills Enhancement</a></li>
+          </ul>
+
+          <!--<form class="navbar-form navbar-right">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
@@ -58,9 +61,9 @@
               <input type="password" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          </form>-->
         </div>
-      </div>-->
+      </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -68,6 +71,7 @@
       <div class="container"><div class="siteTitle"><h2>Drunk Driving Intervention Research </h2><img src="images/UThorizontal.png" width="32%"></div></div>
       <div class="sectionContainer1">
         <div class="container">
+          <div id="information"></div>
           <div class="sectionBreak">
             <h4>Information</h4>
             <p>[description of Information section] Nulla varius ligula mattis sapien sollicitudin vestibulum. Donec facilisis ac turpis quis fringilla. Nullam id sapien purus. Nunc elementum felis ut laoreet condimentum.</p>
@@ -138,7 +142,7 @@
             <img src="images/placeholder.jpg" width="100%">
       </div>
 
-      <div id='social&skills'></div>
+      <div id='socialAndSkills'></div>
       <div class="sectionContainer3">
         <div class="container">
           <div class="sectionBreak">
@@ -187,6 +191,13 @@
     document.getElementById('behavioralModeling_video').addEventListener('click', function() {
     document.getElementById('source_video').src = 'http://www.youtube.com/embed/9jw27h74o2k?autoplay=1';
     });
+
+    $('body').scrollspy({ target: '#navbar' })
+
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this).scrollspy('refresh')
+    })
+    
   </script>
   </body>
 </html>
