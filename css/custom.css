@@ -8,6 +8,14 @@ body{
     height: auto;
 	background: #0060B2;
 	color:white;
+
+	/*z-index:0; 
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;*/
 }
 .sectionBreak h4{
 	margin-top: 0;
@@ -104,15 +112,50 @@ body{
 
 .siteTitle h2{
 
-	font-size: 1.8vw;
 
 	float:left;
 
 }
 
+@media (max-width: 1199px) {
+
+	.siteTitle h2{
+
+		font-size: 20px;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.siteTitle h2{
+		padding-top: 5px;
+		font-size: 16px;
+	}
+
+}
+
 .siteTitle img{
 	
+	width: 32%;
 	float:right;
+}
+
+@media (max-width: 768px) {
+
+	.siteTitle img{
+		width: 0%;
+		visibility: none;
+	}
+
+}
+
+@media (max-width: 1199px) {
+
+	.siteTitle img{
+		padding-top: 6px;
+	}
+
 }
 
 
@@ -147,3 +190,18 @@ body{
  left: 0; 
  top: 0;
 }
+/*
+a[ id= "information" ]:target ~ .jumbotron div.sectionBreak {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[ id= "conditions" ]:target ~ .jumbotron div.sectionBreak{
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}
+a[ id= "questions" ]:target ~ #main div.sectionBreak {
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
+}
+*/
