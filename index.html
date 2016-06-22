@@ -192,10 +192,11 @@
     document.getElementById('source_video').src = 'http://www.youtube.com/embed/9jw27h74o2k?autoplay=1';
     });
 
-    $('body').scrollspy({ target: '#navbar' } target.focus())
+    $('body').scrollspy({ target: '#navbar' })
 
     $('[data-spy="scroll"]').each(function () {
       var $spy = $(this).scrollspy('refresh')
+      document.activeElement.blur();
     })
 
     $("a.scrollTo").on('click',function(e) {
