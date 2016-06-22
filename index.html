@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Defensive Driving Intervention Research</title>
+    <title>Drunk Driving Intervention Research</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -196,7 +196,7 @@
 
     $('[data-spy="scroll"]').each(function () {
       var $spy = $(this).scrollspy('refresh')
-      document.activeElement.blur();
+
     })
 
     $("a.scrollTo").on('click',function(e) {
@@ -206,7 +206,9 @@
           scrollTop: $('#'+hash).offset().top
       }, 500);
     return false;
-});
+    });
+
+    window.onscroll = function() {document.activeElement.blur()}
 /*
     function scrollTo(to, duration) {
       if (document.body.scrollTop == to) return;
