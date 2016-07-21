@@ -2,6 +2,21 @@ body{
 	position: relative!important;
 }
 
+.informationSection{
+
+	color:white; 
+	background-color:rgba(0,0,0,0.625); 
+	margin-bottom: -15px;
+	
+
+}
+
+.informationSection p{
+	padding: 30px!important;
+	padding-top: 20px!important;
+
+}
+
 .sectionBreak{
 	
     width: 100%;
@@ -158,7 +173,7 @@ body{
 @media (max-width: 1199px) {
 
 	.siteTitle img{
-		padding-top: 6px;
+		padding-top: 10px;
 	}
 
 }
