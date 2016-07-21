@@ -112,7 +112,7 @@
           <div class="col-md-3">
             <h4>Control</h4>
             <p>[Control condition info] Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <div id="control_video"><a class="btn btn-default" href="#questions">Go to Questions &raquo;</a></div>
+            <div id="control_video"><a class="btn btn-default goToQuestions" href="#questions">Go to Questions &raquo;</a></div>
           </div>
           <div class="col-md-3">
             <h4>Persuasion</h4>
@@ -216,6 +216,18 @@
     })
 
     $("a.scrollTo").on('click',function(e) {
+      var url = e.target.href;
+      var hash = url.substring(url.indexOf("#")+1);
+      var yOffset = 50;
+       
+      $('html, body').animate({
+            scrollTop: $('#'+hash).offset().top-yOffset
+      }, 500);
+      
+    return false;
+    });
+
+    $("a.goToQuestions").on('click',function(e) {
       var url = e.target.href;
       var hash = url.substring(url.indexOf("#")+1);
       var yOffset = 50;
