@@ -2,6 +2,15 @@ body{
 	position: relative!important;
 }
 
+.btn-default{
+
+	font-size: 16px!important;
+	-moz-box-shadow:    0px 0px 3px 3px rgba(0,0,0,0.175);
+  	-webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.175);
+  	box-shadow:         0px 0px 3px 3px rgba(0,0,0,0.175);
+
+}
+
 .informationSection{
 
 	color:white; 
@@ -51,7 +60,7 @@ body{
 
 	padding-top: 5px;
 	background: #FF9C00;
-	height: 230px;
+	height: 255px;
 	
 }
 
@@ -68,13 +77,13 @@ body{
 	padding-top: 10px;
 	width: 90%!important;
 	position: absolute;
-	height: 40px;
+	height: 44px;
 
 }
 
 .col-md-3 p{
 	padding:10px;
-	height: 120px;
+	height: 140px;
 	font-size: 16px;
 	background: #B26D00;
 
