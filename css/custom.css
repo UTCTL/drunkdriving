@@ -14,7 +14,7 @@ body{
 .informationSection{
 
 	color:white; 
-	background-color:rgba(0,0,0,0.645); 
+	background-color:rgba(0,0,0,0.675); 
 	margin-bottom: -15px;
 	
 
@@ -23,6 +23,7 @@ body{
 .informationSection p{
 	padding: 30px!important;
 	padding-top: 20px!important;
+	color: rgb(210, 210, 210);
 
 }
 
