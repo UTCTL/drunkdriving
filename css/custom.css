@@ -1,10 +1,11 @@
 body{
 	position: relative!important;
+	font-family: sans-serif;
 }
 
 .btn-default{
 
-	font-size: 16px!important;
+	font-size: 17px!important;
 	-moz-box-shadow:    0px 0px 3px 3px rgba(0,0,0,0.2);
   	-webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
   	box-shadow:         0px 0px 3px 3px rgba(0,0,0,0.2);
@@ -15,7 +16,7 @@ body{
 
 	text-align: center;
 	font-size: 22px!important;
-	padding-top: 10px;
+	padding-top: 20px;
 
 }
 
@@ -29,7 +30,7 @@ body{
 }
 
 .informationSection p{
-	font-size: 19px!important;
+	font-size: 20px!important;
 	padding: 35px!important;
 	padding-top: 15px!important;
 	color: rgb(210, 210, 210);
@@ -70,7 +71,7 @@ body{
 
 	padding-top: 5px;
 	background: #FF9C00;
-	height: 255px;
+	height: 405px;
 	
 }
 
@@ -87,13 +88,13 @@ body{
 	padding-top: 10px;
 	width: 90%!important;
 	position: absolute;
-	height: 44px;
+	height: 48px;
 
 }
 
 .col-md-3 p{
 	padding:10px;
-	height: 140px;
+	height: 290px;
 	font-size: 16px;
 	background: #B26D00;
 
